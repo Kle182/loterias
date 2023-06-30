@@ -1,0 +1,251 @@
+  /* Estilos gerais */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+  }
+  
+  body::after {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2018/11/29/21/34/lottery-3846567_1280.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+
+  
+  .container {
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* Estilos para dispositivos de tamanho médio */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* Estilos para dispositivos de tela grande */
+  @media only screen and (min-width: 1025px) {
+    .container {
+      padding: 40px;
+    }
+  }
+
+
+
+
+
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  h1#tit{
+    margin-top: auto;
+    font-size: 5.5vw;
+   padding-top: 1%;
+  }
+  .input-label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+  }
+  
+  .input-field {
+    width: 60px;
+    
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .resultado {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .jogo {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  header{
+    background-color: rgba(128, 128, 128, 0.822);
+    width: 100%;
+    height: 135px;
+  }
+ 
+
+
+  .botao-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .linha {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .botao {
+    font-weight: bold;
+    text-align: center;
+    width: 80px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f3f1f1;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .botao:hover {
+    background-color: #ddd;
+  }
+  
+    /*1 loteca*/
+  #botao1:hover{
+    background-color:  #ea202e;
+    color: white;
+  }
+    /*2 lotofacil*/
+  #botao2:hover{
+    background-color: #7f3992;
+    color: white;
+  }
+    /*3 loto mania*/
+  #botao3:hover{
+    background-color: #f79c31;
+    color: white;
+  }
+  /*4 mega*/
+  #botao4:hover{
+    background-color:   #00ab69;
+    color: white;
+  }
+    /*5 quina*/
+  #botao5:hover{
+    background-color: #015ea1;
+    color: white;
+  }
+    /*6 supersete*/
+  #botao6:hover{  
+    background-color: #acce76;
+    color:white;
+  }
+    /*7 time mania*/
+  #botao7:hover{
+    background-color: #ffdb30;
+    color: rgb(9, 179, 9);
+  }
+    /*8 dupla sena*/
+  #botao8:hover{
+    background-color: #a52e54;
+    color: white;
+  }
+
+  /*img trevo*/
+  #trevo{
+    width: 10%;
+    position: absolute;    
+    top: 0;
+    right: 0;
+   
+
+  }
+  #trevoE{
+    width: 10%;
+    position: absolute;    
+    top: 0;
+   left: 0;
+   
+
+  }
+  @media screen and (max-width: 768px) {
+
+    #trevo, #trevoE{
+      width: 18%;   
+      padding-top: 10px;
+      }
+      h1#tit{
+        padding-top: 6%;
+        font-size: 7.5vw;
+      
+      }
+      
+      .botao {
+        width: 30%;
+      }
+
+
+  }
+  /*movimento*/
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #trevo, #trevoE {
+    animation: rotate 4s linear infinite; /* Define a animação */
+  }
+
+
+.valor-total{
+  font-weight: bold;
+  color: red;
+}
+

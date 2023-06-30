@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quina</title>
+    <script src="js/quina.js"></script>
+
+    <link rel="stylesheet" href="estilo/style.css">
+
+<style>
+  header{
+    background: linear-gradient(to right, #ffffff,  #015ea1, #015ea1, #015ea1, #ffffff);
+
+     }
+     #botao5{
+      background-color: #015ea1;
+      color: white;
+    }
+    .btn{
+      background-color: #015ea1;
+      color: white;
+      
+      font-weight: bold;
+    }
+    .btn:hover{
+      color: black;
+      background-color: #015ea1;
+      font-weight: bold;
+    }
+
+    .numero {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #015ea1;
+      color: BLACK;
+      text-align: center;
+      margin-right: 5px;
+      line-height: 30px;
+    }
+
+</style>
+
+
+</head>
+
+<header>
+  <h1 id="tit">Jogos Premiados</h1>
+  <img id="trevo" src="https://cdn.pixabay.com/photo/2016/04/07/22/09/luck-1314937_1280.png" alt="">
+  <img id="trevoE" src="https://cdn.pixabay.com/photo/2016/04/07/22/09/luck-1314937_1280.png" alt="">
+</header>
+<body>
+
+
+  <main>
+    
+    <div class="botao-container">
+      <div class="linha">
+        <a href="mega.html" class="botao" id="botao4">Mega</a>
+        <a href="lotofacil.html" class="botao" id="botao2">Loto Fácil</a>
+        <a href="quina.html" class="botao" id="botao5">Quina</a>
+        <a href="lotomania.html" class="botao" id="botao3">Loto Mania </a>
+    
+    
+    
+      </div>
+      <div class="linha">
+        <a href="time.html" class="botao" id="botao7">Time Mania</a>
+        <a href="dupla.html" class="botao" id="botao8">Dupla Sena</a>
+        <a href="loteca.html" class="botao" id="botao1">Loteca</a>
+        <a href="sete.html" class="botao" id="botao6">Super Sete</a>
+    
+      </div>
+    </div>
+    
+    
+    
+    <div class="container">
+      <h1>QUINA</h1>
+      <div class="valor-total" id="quina-valor-total"></div>
+    
+      <label for="quina-quantidade">Quantidade de jogos:</label>
+      <input type="number" class="input-field" id="quina-quantidade" min="1" value="1">
+      <button class="btn"  onclick="gerarJogos()">Gerar Jogos</button>
+      <button class="btn"  onclick="limparCampos()">Limpar</button>
+    
+      <div style="font-weight: bold;" id="quina-resultado"></div>
+    </div>
+  </main>
+
+
+</body>
+</html>
