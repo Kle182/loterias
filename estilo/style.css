@@ -227,6 +227,13 @@
         width: 30%;
       }
 
+      .jogo{
+    
+        box-sizing: content-box;
+ 
+      
+      }
+
 
   }
   /*movimento*/
