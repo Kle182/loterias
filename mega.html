@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mega Sena</title>
     <script src="js/mega.js"></script>
+    <script src="teste/index4.js"></script>
 
     <link rel="stylesheet" href="estilo/style.css">
 
@@ -42,10 +43,30 @@
       line-height: 30px;
     }
 
+
+    /*resultados*/  
+    .iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
     
+  }
+  iframe{
+    width: 500px;
+    overflow: hidden;
+    height: 350px;
+  }
+  @media screen and (max-width: 768px) {
+    iframe{
+    width: 90%;
+    overflow: hidden;
+    height: 350px;
+  }
+  }
 
     </style>
-
+<!--https://www.somatematica.com.br/megasena.php-->
 </head>
 
 <header>
@@ -85,6 +106,9 @@
           <button class="btn" onclick="limparCampos()">Limpar</button>
   
           <div style="font-weight: bold;" id="resultado"></div>
+        </div>
+        <div class="iframe-container">
+          <iframe src="http://localhost:3000/" frameborder="0"></iframe>
         </div>
   
 </main>
