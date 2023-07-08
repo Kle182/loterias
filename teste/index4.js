@@ -29,7 +29,7 @@ app.get('/', async (req, res) => {
       <title>Dados da Mega-Sena</title>
     </head>
     <body>
-      <h1 >Dados da Mega-Sena</h1>
+      <h1 >Último Sorteio Mega-Sena</h1>
       <p> ${data}</p>
       <p>Dezenas sorteadas: ${dezena1}, ${dezena2}, ${dezena3}, ${dezena4}, ${dezena5}, ${dezena6}</p>
       <p>Valor do prêmio: ${valor}</p>
